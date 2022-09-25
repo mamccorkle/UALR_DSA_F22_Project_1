@@ -79,17 +79,47 @@ CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/main.cpp" -o CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.s
 
+CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o: CMakeFiles/UALR___DSA___F22___Project_1.dir/flags.make
+CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o: ../Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o -c "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/Node.cpp"
+
+CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/Node.cpp" > CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.i
+
+CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/Node.cpp" -o CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.s
+
+CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o: CMakeFiles/UALR___DSA___F22___Project_1.dir/flags.make
+CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o: ../DoublyLinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o -c "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.cpp"
+
+CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.cpp" > CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.i
+
+CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.cpp" -o CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.s
+
 # Object files for target UALR___DSA___F22___Project_1
 UALR___DSA___F22___Project_1_OBJECTS = \
-"CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.o"
+"CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.o" \
+"CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o" \
+"CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o"
 
 # External object files for target UALR___DSA___F22___Project_1
 UALR___DSA___F22___Project_1_EXTERNAL_OBJECTS =
 
 UALR___DSA___F22___Project_1: CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.o
+UALR___DSA___F22___Project_1: CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o
+UALR___DSA___F22___Project_1: CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o
 UALR___DSA___F22___Project_1: CMakeFiles/UALR___DSA___F22___Project_1.dir/build.make
 UALR___DSA___F22___Project_1: CMakeFiles/UALR___DSA___F22___Project_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable UALR___DSA___F22___Project_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable UALR___DSA___F22___Project_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UALR___DSA___F22___Project_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

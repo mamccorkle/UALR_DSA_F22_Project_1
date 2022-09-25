@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/UALR___DSA___F22___Project_1.dir/DoublyLinkedList.cpp.o"
+  "CMakeFiles/UALR___DSA___F22___Project_1.dir/Node.cpp.o"
   "CMakeFiles/UALR___DSA___F22___Project_1.dir/main.cpp.o"
   "UALR___DSA___F22___Project_1"
   "UALR___DSA___F22___Project_1.pdb"
