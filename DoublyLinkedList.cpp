@@ -10,6 +10,8 @@
 // Date Written: 20220924
 // Date Revised: 20220924
 // Based on Code Provided by Dr. Chia-Chu Chiang
+#include <iomanip>
+
 #include "DoublyLinkedList.h"
 
 DoublyLinkedList::DoublyLinkedList()
@@ -43,7 +45,9 @@ void DoublyLinkedList::addNewNodeToBack(Node* newNode)
 }
 
 Node* DoublyLinkedList::removeNodeFromFront()
-{ }
+{
+    return nullptr;
+}
 
 void DoublyLinkedList::displayDoublyLinkedList()
 {
@@ -56,16 +60,47 @@ void DoublyLinkedList::displayDoublyLinkedList()
     }
 }
 
+//----------------------------------------------------------------------------/*
+/*
+    Function Name:              drawDoublyLinkedList()
+    Function Purpose:           Test Case 1 acts as an iterator as we loop
+                                through each element in the doubly linked list.
+                                As we loop through each element, we print out
+                                the memory address of the node, the previous
+                                nodes' memory address, the value stored in the
+                                node, and the memory address to the next node
+                                in the linked list. The console output has been
+                                formatted to properly display the null pointers
+                                with a width of 14 characters using the iomanip
+                                library.
+    Function Parameters:        NA
+    Function Return Value:      Void
+*/
+//----------------------------------------------------------------------------*/
 void DoublyLinkedList::drawDoublyLinkedList()
 {
-    // CODE TO BE ADDED for Project 1
-    // Might reuse displayDoublyLinkedList()
+    // Set up a temporary node to handle the doubly linked list traversing:
+    Node* tempNode;
+
+    // Set the tempNode to the beginning of the doubly linked list (head):
+    tempNode = head;
+
+    // Loop through the doubly linked list till we reach the end (nullptr):
+    while( tempNode != nullptr )
+    {
+        std::cout << "[address: " << tempNode
+                  << ", prev: " << std::setw(14) << std::left << tempNode->prev
+                  << ", value: " << tempNode->value
+                  << ", next: " << std::setw(14) << std::left << tempNode->next
+                  << "]\n";
+        tempNode = tempNode->next;
+    }
 }
 
 bool DoublyLinkedList::isPalindrome()
 {
     // CODE TO BE ADDED for Project 1
-    //...
+    return true;
 }
 
 void DoublyLinkedList::split(int n) // n is the number of even partitions

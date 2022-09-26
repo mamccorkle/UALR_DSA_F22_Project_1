@@ -34,13 +34,21 @@ int main()
         Node n14(40);
         Node n15(50);
 
+        std::cout << "&n11: " << &n11 << '\n';
+        std::cout << "&n12: " << &n12 << '\n';
+        std::cout << "&n13: " << &n13 << '\n';
+        std::cout << "&n14: " << &n14 << '\n';
+        std::cout << "&n15: " << &n15 << '\n';
+
         // a doubly linked list of integers by inserting nodes
         Dll_1.addNewNodeToFront(&n11);
         Dll_1.addNewNodeToBack (&n12);
         Dll_1.addNewNodeToFront(&n13);
         Dll_1.addNewNodeToBack (&n14);
         Dll_1.addNewNodeToFront(&n15);
+
         Dll_1.drawDoublyLinkedList();
+
         std::cout << '\n';
     }
 

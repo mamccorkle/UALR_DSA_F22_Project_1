@@ -19,6 +19,4 @@ Node::Node(int v): prev{ nullptr }, value{ v }, next{ nullptr }
 { }
 
 Node::~Node()
-{
-
-}
+{ }

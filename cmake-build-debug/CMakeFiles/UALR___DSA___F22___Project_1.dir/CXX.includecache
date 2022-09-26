@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.cpp
+iomanip
+-
+DoublyLinkedList.h
+/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.h
+
 /Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.h
 iostream
 -
@@ -15,10 +21,4 @@ Node.h
 /Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/Node.h
 iostream
 -
-
-/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/main.cpp
-iostream
--
-DoublyLinkedList.h
-/Users/decyple/Library/Mobile Documents/com~apple~CloudDocs/Code/C++/UALR - DSA - F22 - Project 1/DoublyLinkedList.h
 
