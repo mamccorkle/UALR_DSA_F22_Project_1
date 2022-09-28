@@ -80,7 +80,7 @@ void DoublyLinkedList::displayDoublyLinkedList()
 void DoublyLinkedList::drawDoublyLinkedList()
 {
     // Set up a temporary node to handle the doubly linked list traversing:
-    Node* tempNode;
+    Node* tempNode{ nullptr };;
 
     // Set the tempNode to the beginning of the doubly linked list (head):
     tempNode = head;
@@ -97,10 +97,62 @@ void DoublyLinkedList::drawDoublyLinkedList()
     }
 }
 
+//----------------------------------------------------------------------------/*
+/*
+    Function Name:              isPalindrome()
+    Function Purpose:           In this function we first designate two
+                                temporary node to represent the head and tail.
+                                Then, we verify the set is not empty. Which,
+                                would be considered a palindrome. Subsequently,
+                                we compare the values from the temporary head
+                                and tail for equality. If they are the same, we
+                                proceed by moving the head forward and the tail
+                                backward until all elements have been compared.
+                                If the loop completes with all values being
+                                equal, the resulting set is a palindrome.
+    Function Parameters:        NA
+    Function Return Value:      bool (true = Palindrome)
+*/
+//----------------------------------------------------------------------------*/
 bool DoublyLinkedList::isPalindrome()
 {
-    // CODE TO BE ADDED for Project 1
-    return true;
+    // Set up a temporary node (both head and tail) for traversing the doubly
+    // linked list:
+    Node* tempHead{ head };
+    Node* tempTail{ tail };
+
+    // An empty doubly linked list of integers is a palindrome:
+    if( tempHead == nullptr && tempTail == nullptr )
+        return true;
+    // Compare the first set of values. Then, loop through the DLL comparing
+    // each node's values. Each iteration will move toward the center of the DLL
+    // comparing values along the way. However, based on the Project
+    // specifications, we are not allowed to use any "reverse" method. I am not
+    // sure if this counts as a reverse method as we are working backwards from
+    // the tail on the rvalue during comparisons:
+    else
+    {
+        //std::cout << '\n';
+        // Keep looping while we are not at the end of the DLL, designated by
+        // have a nullptr for the tempHead and tempTail:
+        while(tempHead != nullptr && tempTail != nullptr)
+        {
+            // Compare the values. If they are the same, move the tempHead
+            // forward and the tempTail backwards:
+            if (tempHead->value == tempTail->value)
+            {
+                tempHead = tempHead->next;
+                tempTail = tempTail->prev;
+            }
+            // The values are not the same and therefore leads to the conclusion
+            // this is in fact not a palindrome:
+            else
+                return false;
+        }
+
+        // If we have reached this point a palindrome exists:
+        return true;
+    }
 }
 
 void DoublyLinkedList::split(int n) // n is the number of even partitions
