@@ -6,9 +6,17 @@
 // Due Date: October 6, 2022, Thursday
 // Name: Mark McCorkle
 // T-number (Last 4 Digits): 4926
+
 // Description of the Program (2-3 sentences):
+//  The Doubly Linked List header contains the class declaration. Which, declares
+//  the member functions used in this project. Notably, the drawDoublyLinkedList(),
+//  isPalindrome(), and split() functions that are required for the project. It
+//  also contains two Node pointers, as private members, that represent the
+//  starting and ending position of the Doubly Linked List.
+
 // Date Written: 20220924
-// Date Revised: 20220924
+// Date Revised: 20221005
+
 // Based on Code Provided by Dr. Chia-Chu Chiang
 #ifndef UALR___DSA___F22___PROJECT_1_DOUBLYLINKEDLIST_H
 #define UALR___DSA___F22___PROJECT_1_DOUBLYLINKEDLIST_H

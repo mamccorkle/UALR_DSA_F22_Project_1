@@ -6,9 +6,17 @@
 // Due Date: October 6, 2022, Thursday
 // Name: Mark McCorkle
 // T-number (Last 4 Digits): 4926
+
 // Description of the Program (2-3 sentences):
+//----------------------------------------------------------------------------/*
+//  The DoublyLinkedList.cpp file is used to link and unlink Nodes in a Doubly
+//  Linked List. For this project the drawDoublyLinkedList(), isPalindrome(),
+//  and split() functions fulfill the requirements of the project
+//  specifications.
+
 // Date Written: 20220924
-// Date Revised: 20220924
+// Date Revised: 20221005
+
 // Based on Code Provided by Dr. Chia-Chu Chiang
 #include <iomanip>
 
@@ -155,13 +163,69 @@ bool DoublyLinkedList::isPalindrome()
     }
 }
 
+//----------------------------------------------------------------------------/*
+/*
+    Function Name:              split()
+    Function Purpose:           In this function we want to split a doubly
+                                linked list into equal sublist defined by the
+                                input integer parameter n. We first create and
+                                set a tempHead pointer to point to the head of
+                                the original DLL. Next, we need to know the
+                                amount of nodes in the DLL, so we set up a
+                                variable to hold this value and define it by
+                                counting each Node using a loop. Once, we have
+                                the number of nodes we can determine if the
+                                nodes can be evenly divided by the input
+                                parameter, n. Once, the tempHead has been reset
+                                to the original head we loop through the sublist
+                                so that we can print each element in the new
+                                sublist as we move the tempHead forward during
+                                each cycle through the two for-loops
+    Function Parameters:        int representing the number of sublist to split
+                                the DoublyLinkedList into.
+    Function Return Value:      void
+*/
+//----------------------------------------------------------------------------*/
 void DoublyLinkedList::split(int n) // n is the number of even partitions
 {
-    // CODE TO BE ADDED for Project 1
-    //...
+    // Set up a temporary node for traversing the doubly linked list:
+    Node* tempHead{ head };
+
+    // Setup a node counter:
+    int nodeCounter{ 0 };
+
+    // Count the nodes:
+    while( tempHead )
+    {
+        nodeCounter++;
+        tempHead = tempHead->next;
+    }
+
+    // Determine if the list can be split:
+    if( n < 1 || n > nodeCounter || nodeCounter % n != 0 )
+    {
+        std::cout << "This list cannot be processed!\n";
+        return;
+    }
+    else
+        std::cout << "\nI evenly split the doubly linked list into " << n << " sub-linked lists\n\n";
+
+    // Reset the position of the head:
+    tempHead = head;
+
+    // Loop through each new sublist:
+    for( int i{ 0 }; i < n; i++ )
+    {
+        // Print each element in the new sublist:
+        for (int j = 0; j < (nodeCounter / n); ++j) {
+            std::cout << tempHead->value << ' ';
+            // Move the head forward in the DLL:
+            tempHead = tempHead->next;
+        }
+
+        std::cout << '\n';
+    }
 }
 
 void DoublyLinkedList::removeNodeFromBack()
-{
-
-}
+{ }
